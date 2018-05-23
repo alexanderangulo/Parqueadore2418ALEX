@@ -1,4 +1,5 @@
-package com.ADN.Parqueadero2418ALEX;
+
+package com.datos;
 import java.util.Calendar;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +13,7 @@ public class Carro {
 	private int ValorDC=8000;
 	private Calendar HorasC;
 	private Calendar DiasC;
+	
 	public Carro(String placa, int valorHC, int valorDC, Calendar horasC, Calendar diasC) {
 		super();
 		Placa = placa;
@@ -20,6 +22,19 @@ public class Carro {
 		HorasC = horasC;
 		DiasC = diasC;
 	}
+	
+	//Metodos
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public String getPlaca() {
 		return Placa;
 	}

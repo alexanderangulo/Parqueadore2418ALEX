@@ -1,22 +1,24 @@
-package com.ADN.Parqueadero2418ALEX;
+package com.datos;
 //import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-import java.util.Calendar;
+import java.util.Date;
 
 @SpringBootApplication
 public class Ingreso {
 	
 	private int TipoVehiculo;
-	private Calendar FechaIngre;
+	private Date FechaIngre;
 	private String Placa;
 	
-	public Ingreso(int tipoVehiculo, Calendar fechaIngre, String placa) {
+	
+	
+	public Ingreso(int tipoVehiculo, Date fechaIngre, String placa) {
 		super();
-		TipoVehiculo = tipoVehiculo;
-		FechaIngre = fechaIngre;
-		Placa = placa;
+		this.TipoVehiculo = tipoVehiculo;
+		this.FechaIngre = fechaIngre;
+		this.Placa = placa;
 	}
 
 	public int getTipoVehiculo() {
@@ -27,11 +29,11 @@ public class Ingreso {
 		TipoVehiculo = tipoVehiculo;
 	}
 
-	public Calendar getFechaIngre() {
+	public Date getFechaIngre() {
 		return FechaIngre;
 	}
 
-	public void setFechaIngre(Calendar fechaIngre) {
+	public void setFechaIngre(Date fechaIngre) {
 		FechaIngre = fechaIngre;
 	}
 

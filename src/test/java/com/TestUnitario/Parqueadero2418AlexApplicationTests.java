@@ -1,11 +1,8 @@
-package com.ADN.Parqueadero2418ALEX;
+package com.TestUnitario;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 public class Parqueadero2418AlexApplicationTests {
 
