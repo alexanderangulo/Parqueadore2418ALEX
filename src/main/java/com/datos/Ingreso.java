@@ -8,43 +8,45 @@ import java.util.Date;
 @SpringBootApplication
 public class Ingreso {
 	
-	private int TipoVehiculo;
-	private Date FechaIngre;
-	private String Placa;
+	private int tipoVehiculo;
+	private Date fechaIngre;
+	private String placa;
+	
 	
 	
 	
 	public Ingreso(int tipoVehiculo, Date fechaIngre, String placa) {
-		super();
-		this.TipoVehiculo = tipoVehiculo;
-		this.FechaIngre = fechaIngre;
-		this.Placa = placa;
+		this.tipoVehiculo = tipoVehiculo;
+		this.fechaIngre = fechaIngre;
+		this.placa = placa;
 	}
 
 	public int getTipoVehiculo() {
-		return TipoVehiculo;
+		return tipoVehiculo;
 	}
 
 	public void setTipoVehiculo(int tipoVehiculo) {
-		TipoVehiculo = tipoVehiculo;
+		this.tipoVehiculo = tipoVehiculo;
 	}
 
 	public Date getFechaIngre() {
-		return FechaIngre;
+		return fechaIngre;
 	}
 
 	public void setFechaIngre(Date fechaIngre) {
-		FechaIngre = fechaIngre;
+		this.fechaIngre = fechaIngre;
 	}
 
 	public String getPlaca() {
-		return Placa;
+		return placa;
 	}
 
 	public void setPlaca(String placa) {
-		Placa = placa;
+		this.placa = placa;
 	}
-	
+
+
+
 	
 
 }

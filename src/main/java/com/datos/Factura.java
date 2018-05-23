@@ -7,49 +7,62 @@ import java.util.Calendar;
 @SpringBootApplication
 public class Factura {
 
-	private int TipoVehiculo;
-	private String Placa;
-	private Calendar FechaIngre;
-	private Calendar FechaSalida;
-	private double Costo;
+	private int tipoVehiculo;
+	private String placa;
+	private Calendar fechaIngre;
+	private Calendar fechaSalida;
+	private double costo;
+	
 	public Factura(int tipoVehiculo, String placa, Calendar fechaIngre, Calendar fechaSalida, double costo) {
 		super();
-		TipoVehiculo = tipoVehiculo;
-		Placa = placa;
-		FechaIngre = fechaIngre;
-		FechaSalida = fechaSalida;
-		Costo = costo;
+		this.tipoVehiculo = tipoVehiculo;
+		this.placa = placa;
+		this.fechaIngre = fechaIngre;
+		this.fechaSalida = fechaSalida;
+		this.costo = costo;
 	}
+
 	public int getTipoVehiculo() {
-		return TipoVehiculo;
+		return tipoVehiculo;
 	}
+
 	public void setTipoVehiculo(int tipoVehiculo) {
-		TipoVehiculo = tipoVehiculo;
+		this.tipoVehiculo = tipoVehiculo;
 	}
+
 	public String getPlaca() {
-		return Placa;
+		return placa;
 	}
+
 	public void setPlaca(String placa) {
-		Placa = placa;
+		this.placa = placa;
 	}
+
 	public Calendar getFechaIngre() {
-		return FechaIngre;
+		return fechaIngre;
 	}
+
 	public void setFechaIngre(Calendar fechaIngre) {
-		FechaIngre = fechaIngre;
+		this.fechaIngre = fechaIngre;
 	}
+
 	public Calendar getFechaSalida() {
-		return FechaSalida;
+		return fechaSalida;
 	}
+
 	public void setFechaSalida(Calendar fechaSalida) {
-		FechaSalida = fechaSalida;
+		this.fechaSalida = fechaSalida;
 	}
+
 	public double getCosto() {
-		return Costo;
+		return costo;
 	}
+
 	public void setCosto(double costo) {
-		Costo = costo;
+		this.costo = costo;
 	}
 	
+
 	
 }
+	

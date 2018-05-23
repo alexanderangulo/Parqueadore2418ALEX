@@ -8,66 +8,69 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Carro {
-	private String Placa;
-	private int ValorHC=1000;
-	private int ValorDC=8000;
-	private Calendar HorasC;
-	private Calendar DiasC;
+	private String placa;
+	private int valorHC=1000;
+	private int valorDC=8000;
+	private Calendar horasC;
+	private Calendar diasC;
 	
 	public Carro(String placa, int valorHC, int valorDC, Calendar horasC, Calendar diasC) {
-		super();
-		Placa = placa;
-		ValorHC = valorHC;
-		ValorDC = valorDC;
-		HorasC = horasC;
-		DiasC = diasC;
+		
+		this.placa = placa;
+		this.valorHC = valorHC;
+		this.valorDC = valorDC;
+		this.horasC = horasC;
+		this.diasC = diasC;
 	}
-	
-	//Metodos
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public String getPlaca() {
-		return Placa;
+		return placa;
 	}
+
 	public void setPlaca(String placa) {
-		Placa = placa;
+		this.placa = placa;
 	}
+
 	public int getValorHC() {
-		return ValorHC;
+		return valorHC;
 	}
+
 	public void setValorHC(int valorHC) {
-		ValorHC = valorHC;
+		this.valorHC = valorHC;
 	}
+
 	public int getValorDC() {
-		return ValorDC;
+		return valorDC;
 	}
+
 	public void setValorDC(int valorDC) {
-		ValorDC = valorDC;
+		this.valorDC = valorDC;
 	}
+
 	public Calendar getHorasC() {
-		return HorasC;
+		return horasC;
 	}
+
 	public void setHorasC(Calendar horasC) {
-		HorasC = horasC;
+		this.horasC = horasC;
 	}
+
 	public Calendar getDiasC() {
-		return DiasC;
+		return diasC;
 	}
+
 	public void setDiasC(Calendar diasC) {
-		DiasC = diasC;
+		this.diasC = diasC;
 	}
+	
 	
 	
 	//Metodos
+	
+	
+	
+	
+	
 	
 
 }
