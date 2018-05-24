@@ -28,34 +28,6 @@ public class Ingreso {
 				
 	}
 	
-		
-	
-	public int getTipoVehiculo() {
-		return tipoVehiculo;
-	}
-
-	public void setTipoVehiculo(int tipoVehiculo) {
-		this.tipoVehiculo = tipoVehiculo;
-	}
-
-	public Calendar getFechaIngre() {
-		return fechaIngre;
-	}
-
-	public void setFechaIngre(Calendar fechaIngre) {
-		this.fechaIngre = fechaIngre;
-	}
-
-	public String getPlaca() {
-		return placa;
-	}
-
-	public void setPlaca(String placa) {
-		this.placa = placa;
-	}
-
-
-
 	
 
 }

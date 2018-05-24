@@ -16,20 +16,20 @@ public class IngresoTest {
 
 	
 	
-	/*@Test
+	@Test
 	public void ingresoCarrosTest (){
 		//Arrange
 		int tipoVehiculo= 1;
-		Date fechaIngre= new Date();
+		Calendar fechaIngre= Calendar.getInstance();
 		String placa="ABC123";
 		
 		//Act
-		ingreso = jhgf;
+		Ingreso ingreso = new Ingreso(tipoVehiculo, fechaIngre, placa);
 		
 		//Assert
 		Assert.assertNotNull(ingreso);
 	}
-	*/
+	
 	@Test
 	public void verificarDiaNoPermitidoPlacaATest() {
 		
