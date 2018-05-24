@@ -2,25 +2,34 @@ package com.datos;
 //import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-import java.util.Date;
-
+import java.util.Calendar;
 @SpringBootApplication
 public class Ingreso {
 	
 	private int tipoVehiculo;
-	private Date fechaIngre;
+	private  Calendar fechaIngre;
 	private String placa;
 	
 	
 	
-	
-	public Ingreso(int tipoVehiculo, Date fechaIngre, String placa) {
+	public Ingreso() {
+	}
+
+	public Ingreso(int tipoVehiculo, Calendar fechaIngre, String placa) {
 		this.tipoVehiculo = tipoVehiculo;
 		this.fechaIngre = fechaIngre;
 		this.placa = placa;
 	}
 
+	
+	public  boolean validarDiaIngreso(Calendar fechaIngre, String placa) {
+		return ((fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY || fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)
+				&& (placa.charAt(0) == "A".charAt(0))) ;
+				
+	}
+	
+		
+	
 	public int getTipoVehiculo() {
 		return tipoVehiculo;
 	}
@@ -29,11 +38,11 @@ public class Ingreso {
 		this.tipoVehiculo = tipoVehiculo;
 	}
 
-	public Date getFechaIngre() {
+	public Calendar getFechaIngre() {
 		return fechaIngre;
 	}
 
-	public void setFechaIngre(Date fechaIngre) {
+	public void setFechaIngre(Calendar fechaIngre) {
 		this.fechaIngre = fechaIngre;
 	}
 
