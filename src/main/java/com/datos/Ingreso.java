@@ -6,12 +6,12 @@ import java.util.Calendar;
 @SpringBootApplication
 public class Ingreso {
 	
+
+	
 	private int tipoVehiculo;
-	private  Calendar fechaIngre;
+	private Calendar fechaIngre;
 	private String placa;
-	
-	
-	
+
 	public Ingreso() {
 	}
 
@@ -26,6 +26,18 @@ public class Ingreso {
 		return ((fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY || fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)
 				&& (placa.charAt(0) == "A".charAt(0))) ;
 				
+	}
+
+	public void setTipoVehiculo(int tipoVehiculo) {
+		this.tipoVehiculo = tipoVehiculo;
+	}
+
+	public void setFechaIngre(Calendar fechaIngre) {
+		this.fechaIngre = fechaIngre;
+	}
+
+	public void setPlaca(String placa) {
+		this.placa = placa;
 	}
 	
 	

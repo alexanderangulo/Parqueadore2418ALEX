@@ -1,14 +1,14 @@
 package com.TestUnitario;
 
 import com.datos.Ingreso;
+import static org.junit.Assert.*;
 
-import static org.junit.Assert.assertTrue;
 
+import org.junit.Test;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import org.junit.Assert;
-import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
