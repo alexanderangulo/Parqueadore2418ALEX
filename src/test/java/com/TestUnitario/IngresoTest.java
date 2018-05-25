@@ -1,8 +1,9 @@
 package com.TestUnitario;
 
 import com.datos.Ingreso;
-import static org.junit.Assert.*;
+import com.Negocio.*;
 
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 import java.util.Calendar;
@@ -22,9 +23,10 @@ public class IngresoTest {
 		int tipoVehiculo= 1;
 		Calendar fechaIngre= Calendar.getInstance();
 		String placa="ABC123";
+		int cilindraje =-1;
 		
 		//Act
-		Ingreso ingreso = new Ingreso(tipoVehiculo, fechaIngre, placa);
+		Ingreso ingreso = new Ingreso(tipoVehiculo, fechaIngre, placa,cilindraje);
 		
 		//Assert
 		Assert.assertNotNull(ingreso);
@@ -36,11 +38,12 @@ public class IngresoTest {
 		//Arrange
 		int tipoVehiculo= 1;
 		String placa="ABC133";
+		int cilindraje=  -1;
 		Calendar fechaIngre = new GregorianCalendar(2018,4,27,13,24,56);
-		Ingreso ingreso = new Ingreso(tipoVehiculo, fechaIngre, placa);
+		IngresoNegocio ningreso = new IngresoNegocio();
 		
 		//Act
-		boolean diaNoPermitido = ingreso.validarDiaIngreso(fechaIngre, placa);
+		boolean diaNoPermitido = ningreso.validarDiaIngreso(fechaIngre, placa);
 
 		//Assert
 		assertTrue(diaNoPermitido);
@@ -51,13 +54,14 @@ public class IngresoTest {
 		//Arrange
 				int tipoVehiculo= 1;
 				String placa="BAC133";
+				int cilindraje= -1;
 				Calendar fechaIngre = new GregorianCalendar(2018,4,27,13,24,56);
-				Ingreso ingreso = new Ingreso(tipoVehiculo, fechaIngre, placa);
-				
-				//Act
-				boolean diaPermitido = ingreso.validarDiaIngreso(fechaIngre, placa);
+				IngresoNegocio ningreso = new IngresoNegocio();
+					
+		//Act
+				boolean diaPermitido =ningreso.validarDiaIngreso(fechaIngre, placa);
 
-				//Assert
+		//Assert
 				Assert.assertFalse(diaPermitido);
 					
 	

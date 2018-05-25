@@ -1,5 +1,4 @@
 package com.datos;
-//import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Calendar;
@@ -11,21 +10,36 @@ public class Ingreso {
 	private int tipoVehiculo;
 	private Calendar fechaIngre;
 	private String placa;
+	private int cilindraje;
 
 	public Ingreso() {
 	}
 
-	public Ingreso(int tipoVehiculo, Calendar fechaIngre, String placa) {
+	public Ingreso(int tipoVehiculo, Calendar fechaIngre, String placa, int cilindraje) {
 		this.tipoVehiculo = tipoVehiculo;
 		this.fechaIngre = fechaIngre;
 		this.placa = placa;
 	}
 
-	
-	public  boolean validarDiaIngreso(Calendar fechaIngre, String placa) {
-		return ((fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY || fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)
-				&& (placa.charAt(0) == "A".charAt(0))) ;
-				
+
+	public int getCilindraje() {
+		return cilindraje;
+	}
+
+	public void setCilindraje(int cilindraje) {
+		this.cilindraje = cilindraje;
+	}
+
+	public int getTipoVehiculo() {
+		return tipoVehiculo;
+	}
+
+	public Calendar getFechaIngre() {
+		return fechaIngre;
+	}
+
+	public String getPlaca() {
+		return placa;
 	}
 
 	public void setTipoVehiculo(int tipoVehiculo) {
