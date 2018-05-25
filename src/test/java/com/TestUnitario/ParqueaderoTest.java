@@ -6,8 +6,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
-import com.negocio.ParqueaderoNegocio;
+import com.Negocio.ParqueaderoNegocio;
 
 
 @SpringBootTest

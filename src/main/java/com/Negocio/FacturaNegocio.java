@@ -1,7 +1,7 @@
-package com.negocio;
-import com.negocio.*;
-
+package com.Negocio;
 import java.util.Calendar;
+
+import com.Negocio.*;
 
 public class FacturaNegocio {
 

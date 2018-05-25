@@ -1,9 +1,9 @@
-package com.negocio;
+package com.Negocio;
 import com.datos.*;
 import java.util.Calendar;
 
 public class IngresoNegocio {
-	
+	 
 /*	public static final boolean vIngreso;
 	public static final boolean vFactura;
 	

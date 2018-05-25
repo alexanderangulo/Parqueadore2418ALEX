@@ -1,4 +1,4 @@
-package com.negocio;
+package com.Negocio;
 
 import com.datos.Parqueadero;
 

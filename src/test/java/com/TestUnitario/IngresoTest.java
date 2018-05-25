@@ -1,7 +1,7 @@
 package com.TestUnitario;
 
+import com.Negocio.*;
 import com.datos.Ingreso;
-import com.negocio.*;
 
 import static org.junit.Assert.*;
 
