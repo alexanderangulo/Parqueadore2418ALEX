@@ -5,7 +5,7 @@ import java.util.GregorianCalendar;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+import com.negocio.*;
 import com.negocio.FacturaNegocio;
 
 
