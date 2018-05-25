@@ -4,8 +4,8 @@ import java.util.Calendar;
 
 public class IngresoNegocio {
 	
-	public static boolean vIngreso;
-	public static boolean vFactura;
+/*	public static final boolean vIngreso;
+	public static final boolean vFactura;
 	
 	Ingreso ingreso = new Ingreso();
 	int tipoVehiculo= ingreso.getTipoVehiculo();
@@ -21,7 +21,7 @@ public class IngresoNegocio {
 	int contadorMoto = nparqueadero.contadorDMotos(tipoVehiculo,vIngreso,vFactura);
 	
 	}
-	}
+	}*/
 	
 	public  boolean validarDiaIngreso(Calendar fechaIngre, String placa) {
 	return ((fechaIngre.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY 
