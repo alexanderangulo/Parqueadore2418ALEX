@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.TestUnitario.FacturaTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-05-25T20:43:34" hostname="ALEXANDER-ANGULO" time="0.02">
+  <properties/>
+  <testcase name="calcularCostoMotoTest" classname="com.TestUnitario.FacturaTests" time="0.019"/>
+  <testcase name="calculaTiempoTest" classname="com.TestUnitario.FacturaTests" time="0.0"/>
+  <testcase name="calcularCostoCarroTest" classname="com.TestUnitario.FacturaTests" time="0.0"/>
+  <testcase name="calcularCostoMotoCilindrajeMayorTest" classname="com.TestUnitario.FacturaTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
