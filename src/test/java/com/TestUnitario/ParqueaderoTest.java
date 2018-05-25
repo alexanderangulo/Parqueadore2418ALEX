@@ -2,12 +2,12 @@ package com.TestUnitario;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
+
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.Negocio.IngresoNegocio;
-import com.Negocio.ParqueaderoNegocio;
+
+import com.negocio.ParqueaderoNegocio;
 
 
 @SpringBootTest

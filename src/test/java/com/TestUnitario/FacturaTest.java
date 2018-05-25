@@ -1,15 +1,14 @@
 package com.TestUnitario;
 
-import static org.junit.Assert.*;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import com.Negocio.FacturaNegocio;
+import com.negocio.FacturaNegocio;
 
-import junit.framework.Assert;
+
 
 public class FacturaTest {
 

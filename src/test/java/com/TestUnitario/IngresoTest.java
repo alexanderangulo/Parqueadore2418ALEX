@@ -1,7 +1,7 @@
 package com.TestUnitario;
 
 import com.datos.Ingreso;
-import com.Negocio.*;
+import com.negocio.*;
 
 import static org.junit.Assert.*;
 
@@ -36,9 +36,7 @@ public class IngresoTest {
 	public void verificarDiaNoPermitidoPlacaATest() {
 		
 		//Arrange
-		int tipoVehiculo= 1;
 		String placa="ABC133";
-		int cilindraje=  -1;
 		Calendar fechaIngre = new GregorianCalendar(2018,4,27,13,24,56);
 		IngresoNegocio ningreso = new IngresoNegocio();
 		
@@ -52,9 +50,8 @@ public class IngresoTest {
 	@Test
 	public void verificarDiaPermitidoPlacaATest() {
 		//Arrange
-				int tipoVehiculo= 1;
+				
 				String placa="BAC133";
-				int cilindraje= -1;
 				Calendar fechaIngre = new GregorianCalendar(2018,4,27,13,24,56);
 				IngresoNegocio ningreso = new IngresoNegocio();
 					

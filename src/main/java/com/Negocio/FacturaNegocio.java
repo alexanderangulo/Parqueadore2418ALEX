@@ -1,4 +1,4 @@
-package com.Negocio;
+package com.negocio;
 
 import java.util.Calendar;
 
