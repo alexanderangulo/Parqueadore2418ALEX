@@ -13,13 +13,7 @@ import com.Negocio.ParqueaderoNegocio;
 @SpringBootTest
 public class ParqueaderoTest {
 
-	/*@Before 
-	public void incializar() {
-		private int numMaxCarro=20;
-		private int numMaxMoto=10;
-		
-	}*/
-	
+
 	@Test
 	public void DisponibilidadCarroTest() {
 		//Arrange

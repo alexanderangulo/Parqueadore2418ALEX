@@ -4,11 +4,11 @@ import java.util.Calendar;
 
 public class FacturaNegocio {
 
-	public static int VALORHORACARRO=1000;
-	public static int VALORDIACARRO=8000;
-	public static int VALORHORAMOTO=500;
-	public static int VALORDIAMOTO=4000;
-	public static int VALORCILINDRAJE=2000;
+	public static final int VALORHORACARRO=1000;
+	public static final int VALORDIACARRO=8000;
+	public static final int VALORHORAMOTO=500;
+	public static final int VALORDIAMOTO=4000;
+	public static final int VALORCILINDRAJE=2000;
 	
 
 	public String calcularDuracion(Calendar fechaIngre,Calendar fechaSalida ) {
