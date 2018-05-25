@@ -10,7 +10,7 @@ import com.negocio.FacturaNegocio;
 
 
 
-public class FacturaTests {
+public class FacturaTest {
 
 	@Test
 	public void calculaTiempoTest() {
