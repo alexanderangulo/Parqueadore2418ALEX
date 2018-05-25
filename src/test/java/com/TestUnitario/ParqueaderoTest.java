@@ -28,6 +28,11 @@ public class ParqueaderoTest {
 	}
 
 	@Test
+	public void test() {
+		
+	}
+	
+	@Test
 	public void DisponibilidadMotoTest() {
 		//Arrange
 		
