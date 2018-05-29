@@ -1,54 +1,81 @@
 package com.datos;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Entity;
+
+@Entity
 public class Parqueadero {
 	
 	private int contadorCarros;
 	private int contadorMotos;
-	private int numMaxCarro;
-	private int numMaxMoto;
+
+	List<Moto> idmoto=new ArrayList();
+	List<Carro> idCarro=new ArrayList();
 	
-	public Parqueadero(int contadorCarros, int contadorMotos,int numMaxCarro,int numMaxMoto) {
+
+		
+		
+	public Parqueadero(int contadorCarros, int contadorMotos, List<Moto> idmoto, List<Carro> idCarro) {
 		this.contadorCarros = contadorCarros;
 		this.contadorMotos = contadorMotos;
-		this.numMaxCarro =numMaxCarro;
-		this.numMaxMoto =numMaxMoto;
-		
-		
+		this.idmoto = idmoto;
+		this.idCarro = idCarro;
 	}
+
+	
 
 	public Parqueadero() {
 	}
 
-	public int getNumMaxCarro() {
-		return numMaxCarro;
-	}
 
-	public void setNumMaxCarro(int numMaxCarro) {
-		this.numMaxCarro = numMaxCarro;
-	}
-
-	public int getNumMaxMoto() {
-		return numMaxMoto;
-	}
-
-	public void setNumMaxMoto(int numMaxMoto) {
-		this.numMaxMoto = numMaxMoto;
-	}
 
 	public int getContadorCarros() {
 		return contadorCarros;
 	}
 
+
+
 	public void setContadorCarros(int contadorCarros) {
 		this.contadorCarros = contadorCarros;
 	}
+
+
 
 	public int getContadorMotos() {
 		return contadorMotos;
 	}
 
+
+
 	public void setContadorMotos(int contadorMotos) {
 		this.contadorMotos = contadorMotos;
 	}
 
+
+
+	public List<Moto> getIdmoto() {
+		return idmoto;
+	}
+
+
+
+	public void setIdmoto(List<Moto> idmoto) {
+		this.idmoto = idmoto;
+	}
+
+
+
+	public List<Carro> getIdCarro() {
+		return idCarro;
+	}
+
+
+
+	public void setIdCarro(List<Carro> idCarro) {
+		this.idCarro = idCarro;
+	}
+
+	
 }

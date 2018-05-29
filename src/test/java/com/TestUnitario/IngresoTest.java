@@ -20,13 +20,14 @@ public class IngresoTest {
 	@Test
 	public void ingresoCarrosTest (){
 		//Arrange
+		long id=1;
 		int tipoVehiculo= 1;
 		Calendar fechaIngre= Calendar.getInstance();
 		String placa="ABC123";
 		int cilindraje =-1;
 		
 		//Act
-		Ingreso ingreso = new Ingreso(tipoVehiculo, fechaIngre, placa,cilindraje);
+		Ingreso ingreso = new Ingreso(id, fechaIngre,tipoVehiculo,placa,cilindraje);
 		
 		//Assert
 		Assert.assertNotNull(ingreso);
